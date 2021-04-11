@@ -1,8 +1,12 @@
 import React, {memo} from 'react';
 
 interface filterItemInterface {
-    title: string,
-    items: any
+    title?: string,
+    items?: any
+}
+interface interfaceRecommendation {
+    slug: string,
+    name: string,
 }
 
 const FilterItem: React.FC<filterItemInterface> = ({
@@ -12,13 +16,14 @@ const FilterItem: React.FC<filterItemInterface> = ({
 
     return (
         <>
+
             {
                 title
             }
             {
-                items.map((item: string,index: number)=>(
+                items.map((item,index)=> (
                     <div key={index}>
-                        {item}
+                        {item.name}
                     </div>
                 ))
             }
