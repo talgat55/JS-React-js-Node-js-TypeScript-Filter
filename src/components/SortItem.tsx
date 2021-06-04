@@ -14,7 +14,8 @@ const SortItem: React.FC<filterItemInterface> = ({
                                                      title,
                                                      items
                                                  }) => {
-    const [activeElement , setActiveElement] = useState(null);
+    const [activeElement , setActiveElement] = useState<null | number>(null);
+
     const handlerClickOnSortItem = (index: number) => {
         setActiveElement(index);
     }
