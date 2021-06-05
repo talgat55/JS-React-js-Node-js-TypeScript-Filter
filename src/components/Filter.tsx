@@ -1,6 +1,7 @@
 import React, {memo } from 'react';
 import SortItem from './SortItem';
 import styled from 'styled-components';
+import TypeItems from './TypeItems';
 
 interface interfaceRecommendation {
     slug: string,
@@ -32,6 +33,7 @@ const Filter: React.FC = () => {
                 title="Сортровка"
                 items={RECOMMENDATIONS_LIST}
             />
+            <TypeItems/>
         </FilterComponent>
     )
 }
