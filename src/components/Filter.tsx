@@ -2,6 +2,7 @@ import React, {memo } from 'react';
 import SortItem from './SortItem';
 import styled from 'styled-components';
 import TypeItems from './TypeItems';
+import CatBlock from "./CatBlock";
 
 interface interfaceRecommendation {
     slug: string,
@@ -34,6 +35,9 @@ const Filter: React.FC = () => {
                 items={RECOMMENDATIONS_LIST}
             />
             <TypeItems/>
+            <div className="aside">
+                <CatBlock/>
+            </div>
         </FilterComponent>
     )
 }
