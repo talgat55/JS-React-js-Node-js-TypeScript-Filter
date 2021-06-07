@@ -3,6 +3,7 @@ import SortItem from './SortItem';
 import styled from 'styled-components';
 import TypeItems from './TypeItems';
 import CatBlock from "./CatBlock";
+import ColorBlock from './ColorBlock';
 
 interface interfaceRecommendation {
     slug: string,
@@ -37,6 +38,8 @@ const Filter: React.FC = () => {
             <TypeItems/>
             <div className="aside">
                 <CatBlock/>
+                <ColorBlock/>
+
             </div>
         </FilterComponent>
     )
